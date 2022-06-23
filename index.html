@@ -1,0 +1,58 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>&nbsp Questão12 &nbsp</title>
+
+
+
+      
+   </head>
+   <body>
+      <div>
+        <h1>INFORME OS NÚMEROS PARA SOMAR</h1>
+      </div>
+      <input type="float" required id="numero1">
+      <input type="float" required id="numero2">
+
+
+
+
+      <p id="resposta"></p>
+
+      </div>
+
+   </body>
+   <script>
+
+  
+     
+var numero1 = document.getElementById("numero1");
+var numero2 = document.getElementById("numero2");
+var resposta = document.getElementById("resposta");
+
+numero1.addEventListener("input", soma);
+numero2.addEventListener("input", soma);
+
+function soma() {
+  var um = parseFloat(numero1.value) || 0;
+  var dois = parseFloat(numero2.value) || 0;
+  
+  resposta.innerHTML = "resposta da soma: " + (um+dois);
+}
+    
+   </script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
